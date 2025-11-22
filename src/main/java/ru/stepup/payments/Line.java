@@ -8,11 +8,6 @@ public class Line {
         this.end = end;
     }
 
-    public Line(int x1, int y1, int x2, int y2) {
-        this.start = new Point(x1, y1);
-        this.end = new Point(x2, y2);
-    }
-
     public int getLength(){
         int deltaX = end.x - start.x;
         int deltaY = end.y - start.y;
@@ -23,14 +18,4 @@ public class Line {
         return "Линия от " + start +
                 " до " + end;
     }
-
-    public Point getStart() {
-        return start;
-    }
-
-    public Point getEnd() {
-        return end;
-    }
-
-
 }
