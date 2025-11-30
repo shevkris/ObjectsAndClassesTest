@@ -37,11 +37,11 @@ public class PolyLine {
         return lines;
     }
 
-    public int getLength(){
+    public double getLength(){
         if (points.length < 2) {
             return 0;
         }
-        int length = 0;
+        double length = 0;
         for (int i = 0; i < points.length - 1; i++) {
             Line line = new Line(points[i], points[i + 1]);
             length += line.getLength();

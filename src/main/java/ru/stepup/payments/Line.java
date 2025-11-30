@@ -8,10 +8,10 @@ public class Line {
         this.end = end;
     }
 
-    public int getLength(){
-        int deltaX = end.x - start.x;
-        int deltaY = end.y - start.y;
-        return (int) Math.sqrt(deltaX*deltaX + deltaY*deltaY);
+    public double getLength(){
+        double deltaX = end.x - start.x;
+        double deltaY = end.y - start.y;
+        return Math.sqrt(deltaX*deltaX + deltaY*deltaY);
     }
     @Override
     public String toString() {

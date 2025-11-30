@@ -13,7 +13,7 @@ public class Main {
         PolyLine polyLine = new PolyLine(initialPoints);
         System.out.println("Созданная ломаная: " + polyLine);
 
-        int polyLineLength = polyLine.getLength();
+        double polyLineLength = polyLine.getLength();
         System.out.println("Длина ломаной: " + polyLineLength);
 
         Line[] lines = polyLine.getLines();
@@ -22,7 +22,7 @@ public class Main {
             System.out.println("Линия " + (i + 1) + ": " + lines[i]);
         }
 
-        int linesLength = 0;
+        double linesLength = 0;
         for (Line line : lines) {
             linesLength += line.getLength();
         }
