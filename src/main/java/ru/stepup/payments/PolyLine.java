@@ -2,7 +2,7 @@ package ru.stepup.payments;
 
 import java.util.Arrays;
 
-public class PolyLine {
+public class PolyLine implements Measurable{
     Point[] points;
 
     public PolyLine() {

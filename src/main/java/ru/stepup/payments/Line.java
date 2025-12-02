@@ -1,11 +1,16 @@
 package ru.stepup.payments;
 
-public class Line {
+public class Line implements Measurable{
     private Point start;
     private Point end;
     public Line(Point start, Point end) {
         this.start = start;
         this.end = end;
+    }
+
+    public Line (double x1, double y1, double x2, double y2) {
+        this.start = new Point(x1, y1);
+        this.end = new Point(x2, y2);
     }
 
     public double getLength(){
