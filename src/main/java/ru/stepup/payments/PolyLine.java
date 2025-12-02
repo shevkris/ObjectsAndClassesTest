@@ -3,7 +3,7 @@ package ru.stepup.payments;
 import java.util.Arrays;
 
 public class PolyLine {
-    private Point[] points;
+    Point[] points;
 
     public PolyLine() {
         this.points = new Point[0];
@@ -54,6 +54,14 @@ public class PolyLine {
             return points[index];
         }
         return null;
+    }
+
+    public Point[] getPoints(){
+        return points;
+    }
+
+    public int getPointCount(){
+        return points.length;
     }
 }
 
