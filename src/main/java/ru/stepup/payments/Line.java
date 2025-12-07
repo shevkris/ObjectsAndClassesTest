@@ -13,6 +13,7 @@ public class Line implements Measurable{
         this.end = new Point(x2, y2);
     }
 
+    @Override
     public double getLength(){
         double deltaX = end.x - start.x;
         double deltaY = end.y - start.y;

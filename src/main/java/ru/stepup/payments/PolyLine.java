@@ -37,6 +37,7 @@ public class PolyLine implements Measurable{
         return lines;
     }
 
+    @Override
     public double getLength(){
         if (points.length < 2) {
             return 0;
